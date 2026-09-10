@@ -1,0 +1,43 @@
+# ==========================================================================
+# GITIGNORE — NITIN SINGH PORTFOLIO
+# Strictly safeguards private personal files and local environment caches
+# ==========================================================================
+
+# Private Identity & Financial Documents
+Nitin_Kumar_Singh/
+Nitin_Kumar_Singh/Banking/
+Nitin_Kumar_Singh/Identity/
+Nitin_Kumar_Singh/Education/
+Nitin_Kumar_Singh/NSE/
+Nitin_Kumar_Singh/Udaan_India_Foundation/
+*.xlsx
+*.xls
+*.docx
+*.doc
+
+# Temporary Processing Directories & Raw Extracts
+temp_certs/
+resume_text.txt
+extracted_avatar.jpg
+personaplex_img_0.png
+
+# Operating System Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Python & Environment Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
