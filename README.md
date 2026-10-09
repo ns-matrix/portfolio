@@ -3,7 +3,7 @@
 > **Data Scientist & AI / LLM Engineer**  
 > B.Sc. Data Science (SGPI: 8.58) • Apprentice @ National Stock Exchange of India (NSE)  
 > Location: Powai, Mumbai, Maharashtra, India  
-> Email: `ns077751@gmail.com` • [GitHub](https://github.com/ns-matrix) • [LinkedIn](https://www.linkedin.com/in/singh-nitin-kumar-chakradhar-radha-339210262/) • [Google Developer Profile](https://developers.google.com/profile/u/nxmatrix)
+> Email: `ns077751@gmail.com` • [GitHub](https://github.com/ns-matrix) • [LinkedIn](https://www.linkedin.com/in/nitin-kumar-singh-339210262/) • [Google Developer Profile](https://developers.google.com/profile/u/nxmatrix)
 
 ---
 
