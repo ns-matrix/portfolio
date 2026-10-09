@@ -19,7 +19,7 @@ const PORTFOLIO_DATA = {
     location: "Powai, Mumbai, Maharashtra, India",
     email: "ns077751@gmail.com",
     github: "https://github.com/ns-matrix",
-    linkedin: "https://www.linkedin.com/in/singh-nitin-kumar-chakradhar-radha-339210262/",
+    linkedin: "https://www.linkedin.com/in/nitin-kumar-singh-339210262/",
     googleDev: "https://developers.google.com/profile/u/nxmatrix",
     avatar: "assets/profile/avatar.webp",
     statusText: "Available for High-Impact AI & Data Science Opportunities",
