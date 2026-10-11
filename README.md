@@ -170,3 +170,33 @@ To update projects, add new certifications, or change stats, you only need to ed
 
 Designed and engineered for **Nitin Singh**.  
 All rights reserved © 2026.
+
+
+## NX-Matrix Portfolio — Updates
+
+This portfolio presents Nitin Singh's work across software development, data science, Python automation, and applied AI.
+
+### Profile highlights
+- B.Sc. Data Science student, University of Mumbai
+- Internship/apprenticeship at NSE, working with ADM and Webtic
+- Building projects under NX-Matrix
+- Interests: software engineering, data analytics, machine learning, and local AI
+
+### Run locally
+This is a static HTML/CSS/JavaScript site. Open `index.html` directly, or run:
+
+```bash
+python -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
+
+### Deploy on Netlify
+1. Import `https://github.com/ns-matrix/portfolio` into Netlify.
+2. Select the repository's `main` branch.
+3. Leave the build command empty for static hosting.
+4. Set the publish directory to `.` (repository root).
+5. Deploy.
+
+### Content updates
+Most profile content is stored in `js/data.js`; section layout is in `index.html`, and styling is in `css/style.css`.
