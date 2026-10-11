@@ -104,11 +104,11 @@ const PORTFOLIO_DATA = {
     {
       id: "personaplex-7b",
       title: "PersonaPlex 7B (4-bit)",
-      subtitle: "Voice & Text Conversational AI on Constrained Hardware",
+      subtitle: "AI Assistant Experiment · Efficient Inference",
       badge: "Flagship AI Project",
       category: "ai-ml",
       image: "assets/projects/personaplex.webp",
-      shortDescription: "A full-fledged conversational AI system combining voice input and quantized 7B LLM inference running on a free-tier Google Colab T4 GPU (16GB VRAM limit).",
+      shortDescription: "An experimental conversational AI build exploring voice/text interaction and efficient large-model inference on constrained hardware.",
       tags: ["Python", "Hugging Face", "bitsandbytes", "Transformers", "Gradio", "PyTorch"],
       liveUrl: "https://ns-matrix-personaplex7b-4-bit.netlify.app",
       githubUrl: "https://github.com/ns-matrix",
