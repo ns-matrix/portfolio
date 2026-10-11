@@ -84,6 +84,7 @@
   });
   renderSkills('all');
 
+  // Original project visuals are copied into this version's assets folder.
   const projects = [
     {title:'EcomIQ — Predictive E-Commerce Analytics',category:'data',label:'DATA SCIENCE & ML',symbol:'↗',image:'assets/ecomiq.webp',subtitle:'Consumer behavior · predictive modeling',description:'A consumer analytics project built around 300+ survey responses. Compares classification approaches to model shopping behavior and presents findings through an interactive analytics workflow.',tags:['Python','Streamlit','Scikit-learn','Pandas'],github:'https://github.com/ns-matrix',live:'https://github.com/ns-matrix',liveLabel:'Project hub ↗'},
     {title:'PersonaPlex 7B · 4-bit',category:'ai',label:'APPLIED AI',symbol:'AI',image:'assets/personaplex.webp',subtitle:'Efficient large-model inference',description:'An experimental conversational AI build exploring voice/text interaction and 4-bit model quantization for lower-memory inference environments.',tags:['Python','Transformers','bitsandbytes','Gradio'],github:'https://github.com/ns-matrix',live:'https://ns-matrix-personaplex7b-4-bit.netlify.app',liveLabel:'Explore build ↗'},
@@ -96,7 +97,10 @@
   const projectFilters = document.getElementById('project-filters');
   const renderProjects = filter => {
     const visible = projects.filter(project => filter === 'all' || project.category === filter);
-    projectGrid.innerHTML = visible.length ? visible.map((project, index) => `<article class="project-card"><div class="project-visual ${project.image ? 'has-image' : ''}">${project.image ? `<img src="${project.image}" alt="" loading="lazy" class="project-image">` : ''}<span class="project-index">PROJECT / ${String(index + 1).padStart(2,'0')}</span><span class="project-category">${project.label}</span><span class="project-symbol">${project.image ? '' : project.symbol}</span></div><div class="project-body"><h3>${project.title}</h3><p class="project-subtitle">${project.subtitle}</p><p class="project-description">${project.description}</p><div class="project-tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div><div class="project-foot"><a href="${project.github}" target="_blank" rel="noreferrer">Source / GitHub ↗</a><a href="${project.live}" target="_blank" rel="noreferrer">${project.liveLabel}</a></div></div></article>`).join('') : '<p class="empty-state">No projects in this category yet.</p>';
+    projectGrid.innerHTML = visible.length ? visible.map((project, index) => {
+      const image = project.image ? `<img src="${project.image}" alt="" loading="lazy" class="project-image">` : '';
+      return `<article class="project-card"><div class="project-visual ${project.image ? 'has-image' : ''}">${image}<span class="project-index">PROJECT / ${String(index + 1).padStart(2,'0')}</span><span class="project-category">${project.label}</span><span class="project-symbol">${project.image ? '' : project.symbol}</span></div><div class="project-body"><h3>${project.title}</h3><p class="project-subtitle">${project.subtitle}</p><p class="project-description">${project.description}</p><div class="project-tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div><div class="project-foot"><a href="${project.github}" target="_blank" rel="noreferrer">Source / GitHub ↗</a><a href="${project.live}" target="_blank" rel="noreferrer">${project.liveLabel}</a></div></div></article>`;
+    }).join('') : '<p class="empty-state">No projects in this category yet.</p>';
   };
   projectFilters?.addEventListener('click', event => {
     const button = event.target.closest('button[data-filter]');
