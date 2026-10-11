@@ -22,7 +22,7 @@ const PORTFOLIO_DATA = {
     linkedin: "https://www.linkedin.com/in/nitin-kumar-singh-339210262/",
     googleDev: "https://developers.google.com/profile/u/nxmatrix",
     avatar: "assets/profile/avatar.webp",
-    statusText: "Open to software development, data, and AI opportunities",
+    statusText: "Building under NX-Matrix · Software · Data · AI",
     aboutBio: [
       "I'm Nitin Singh, a B.Sc. Data Science student at the University of Mumbai with a practical interest in software engineering, analytics, and AI-powered tools.",
       "I build projects that connect data and real-world workflows: EcomIQ for predictive e-commerce analytics, automation experiments, and developer-focused applications. I care about usable interfaces, clear architecture, and making projects easy to explore and run.",
