@@ -8,34 +8,33 @@ const PORTFOLIO_DATA = {
   personal: {
     name: "Nitin Singh",
     officialName: "Singh Nitin Kumar Chakradhar Radha",
-    title: "Data Scientist & AI / LLM Engineer",
+    title: "Software Developer · Data Science · AI",
     roles: [
-      "Data Scientist",
-      "AI & LLM Developer",
-      "Apprentice @ National Stock Exchange (NSE)",
-      "Machine Learning Practitioner"
+      "Software Engineer & Developer",
+      "Data Science Student",
+      "AI / Machine Learning Builder",
+      "NX-Matrix Creator"
     ],
-    tagline: "Engineering quantized neural conversational agents, predictive machine learning pipelines, and financial analytics systems.",
-    location: "Powai, Mumbai, Maharashtra, India",
+    tagline: "Building useful software, data-driven products, and practical AI systems — from predictive analytics to browser automation.",
+    location: "Mumbai, India",
     email: "ns077751@gmail.com",
     github: "https://github.com/ns-matrix",
     linkedin: "https://www.linkedin.com/in/nitin-kumar-singh-339210262/",
     googleDev: "https://developers.google.com/profile/u/nxmatrix",
     avatar: "assets/profile/avatar.webp",
-    statusText: "Available for High-Impact AI & Data Science Opportunities",
+    statusText: "Open to software development, data, and AI opportunities",
     aboutBio: [
-      "I am an ambitious Data Scientist and AI Developer pursuing a B.Sc. in Data Science at the University of Mumbai (SGPI: 8.58). Currently, I am expanding my domain expertise as an Apprentice at the National Stock Exchange of India (NSE) under the National Apprenticeship Training Scheme (NATS).",
-      "My technical journey bridges deep theory with production engineering. I build practical, real-world solutions ranging from quantized 4-bit conversational LLMs running on constrained GPU hardware (PersonaPlex 7B) to end-to-end predictive machine learning web applications analyzing primary consumer survey datasets (EcomIQ).",
-      "I believe in data integrity, architectural efficiency, and verifiable technical craftsmanship. Constantly experimenting with vector databases, agentic workflows, and predictive modeling, I build software that transforms complex data into clear, actionable intelligence."
+      "I'm Nitin Singh, a B.Sc. Data Science student at the University of Mumbai with a practical interest in software engineering, analytics, and AI-powered tools.",
+      "I build projects that connect data and real-world workflows: EcomIQ for predictive e-commerce analytics, automation experiments, and developer-focused applications. I care about usable interfaces, clear architecture, and making projects easy to explore and run.",
+      "I also work as an intern/apprentice at the National Stock Exchange of India (NSE), in ADM and Webtic. Outside that role, I keep building under NX-Matrix and improving my skills across Python, web development, machine learning, SQL, and local AI."
     ],
     highlights: [
-      { label: "Location", value: "Powai, Mumbai, India" },
-      { label: "Education", value: "B.Sc. Data Science (SGPI: 8.58)" },
-      { label: "Affiliation", value: "National Stock Exchange (NSE) Apprentice" },
-      { label: "Focus", value: "LLMs, Quantization, Machine Learning & Analytics" }
+      { label: "Location", value: "Mumbai, India" },
+      { label: "Education", value: "B.Sc. Data Science · University of Mumbai" },
+      { label: "Experience", value: "NSE · ADM & Webtic" },
+      { label: "Focus", value: "Software Engineering, Data & AI" }
     ]
   },
-
   metrics: [
     {
       value: "8.58",
