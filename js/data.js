@@ -216,6 +216,37 @@ const PORTFOLIO_DATA = {
         ],
         results: "Provided a turnkey personal AI workstation capable of querying hundreds of academic papers with precise source citations and zero cloud API charges."
       }
+    },
+    {
+      id: "rickshaw-rush",
+      title: "Rickshaw Rush — Real City Drive",
+      subtitle: "Browser-based 3D auto-rickshaw simulation",
+      badge: "Interactive Simulation",
+      category: "web-simulation",
+      image: "assets/projects/rickshaw-rush.svg",
+      shortDescription: "A browser-based driving simulation set around Mumbai neighbourhoods, with a Three.js auto-rickshaw, MapLibre map controls, OpenStreetMap-based road routing, passenger pickup/drop-off missions, and fare scoring. A separate Python/Ursina prototype is also included.",
+      tags: ["JavaScript", "Three.js", "MapLibre GL JS", "OpenStreetMap", "OSRM", "Python / Ursina"],
+      liveUrl: null,
+      githubUrl: "https://github.com/ns-matrix/rickshaw-rush",
+      stats: [
+        { label: "Browser Renderer", value: "Three.js" },
+        { label: "Map UI", value: "MapLibre GL JS" },
+        { label: "Road Routing", value: "OSRM" },
+        { label: "Inputs", value: "Keyboard + Touch" }
+      ],
+      caseStudy: {
+        problem: "Create a playable auto-rickshaw driving experience grounded in recognizable Mumbai neighbourhoods, while keeping the core browser prototype static and easy to run.",
+        architecture: "The browser version uses MapLibre GL JS for the map, Three.js for a procedural 3D rickshaw, OpenStreetMap-derived road data, and the public OSRM routing service. Keyboard and touch inputs drive the vehicle; mission state tracks passenger pickup, drop-off, and fares. A separate Python/Ursina prototype requests road geometry through Overpass and a driving route through OSRM. The browser version falls back to a local practice route when live routing is unavailable.",
+        keyFeatures: [
+          "Choose driving areas including Powai, Andheri East, and Marine Drive / South Mumbai.",
+          "Follow road routes when the public OSRM service responds, with a local practice-route fallback.",
+          "Render a procedural 3D auto-rickshaw with an optional GLB model loader.",
+          "Use keyboard or touch controls for steering, acceleration, braking, and map camera controls.",
+          "Complete passenger pickup and drop-off missions and earn fare scores.",
+          "Explore a separate Python/Ursina 3D prototype that fetches OpenStreetMap road geometry."
+        ],
+        results: "The repository contains browser and Python prototypes. Live map tiles and routing depend on public third-party services, so the project is best presented as an interactive simulation prototype rather than a production navigation service."
+      }
     }
   ],
 
