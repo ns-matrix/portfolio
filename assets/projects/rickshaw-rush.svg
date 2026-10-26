@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Rickshaw Rush — Real City Drive</title>
+<desc id="desc">Stylized green and yellow auto-rickshaw on a road through a dark Mumbai-inspired city map.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10251b"/><stop offset="1" stop-color="#071018"/></linearGradient>
+  <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2cce70"/><stop offset="1" stop-color="#08713d"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a8f0f0" stop-opacity=".9"/><stop offset="1" stop-color="#428f9e" stop-opacity=".65"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g opacity=".22" stroke="#4c8666" stroke-width="2" fill="none">
+  <path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200M0 630H1200"/>
+  <path d="M90 0V675M180 0V675M270 0V675M360 0V675M450 0V675M540 0V675M630 0V675M720 0V675M810 0V675M900 0V675M990 0V675M1080 0V675M1170 0V675"/>
+</g>
+<path d="M-40 555C170 470 280 610 470 520S780 380 910 475 1080 555 1240 410" fill="none" stroke="#1d302b" stroke-width="180" stroke-linecap="round"/>
+<path d="M-40 555C170 470 280 610 470 520S780 380 910 475 1080 555 1240 410" fill="none" stroke="#d3a83b" stroke-width="4" stroke-dasharray="20 24" opacity=".75"/>
+<g transform="translate(360 195)">
+  <ellipse cx="240" cy="345" rx="235" ry="30" fill="#000" opacity=".42"/>
+  <g fill="#111b19" stroke="#4b6258" stroke-width="8">
+    <circle cx="82" cy="320" r="62"/><circle cx="365" cy="320" r="62"/><circle cx="223" cy="325" r="48"/>
+  </g>
+  <g fill="#a8b9b0">
+    <circle cx="82" cy="320" r="27"/><circle cx="365" cy="320" r="27"/><circle cx="223" cy="325" r="20"/>
+  </g>
+  <path d="M42 252L60 154Q69 128 102 124L310 124Q340 129 350 161L388 253Z" fill="url(#body)" stroke="#62e49a" stroke-width="7"/>
+  <path d="M93 132L112 62Q118 42 145 42H276Q300 45 309 67L330 132Z" fill="#0c5834" stroke="#65df99" stroke-width="7"/>
+  <path d="M132 58H275L296 125H113Z" fill="url(#glass)" stroke="#b5fff0" stroke-width="5"/>
+  <path d="M45 244H387L410 278H22Z" fill="#f8c73e" stroke="#ffe88a" stroke-width="6"/>
+  <path d="M62 177H104L92 226H52Z" fill="#f8c73e"/>
+  <path d="M329 177H370L384 226H343Z" fill="#f8c73e"/>
+  <rect x="155" y="164" width="100" height="62" rx="12" fill="#0d3f28" stroke="#9ef3b8" stroke-width="5"/>
+  <path d="M173 177H237M173 194H237M173 211H222" stroke="#bafbd0" stroke-width="5" opacity=".7"/>
+  <rect x="31" y="264" width="48" height="19" rx="6" fill="#fff0a2"/>
+  <rect x="365" y="264" width="43" height="19" rx="6" fill="#ff6a58"/>
+  <path d="M125 43V18H290V43" fill="none" stroke="#f8c73e" stroke-width="9" stroke-linecap="round"/>
+  <path d="M150 20H265" stroke="#fff0a2" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g font-family="system-ui,Segoe UI,sans-serif">
+  <text x="64" y="82" font-size="22" font-weight="700" letter-spacing="5" fill="#73e4a0">NX-MATRIX / INTERACTIVE SIMULATION</text>
+  <text x="60" y="600" font-size="56" font-weight="900" letter-spacing="-2" fill="#f4f8f5">RICKSHAW <tspan fill="#f8c73e">RUSH</tspan></text>
+  <text x="64" y="641" font-size="20" letter-spacing="4" fill="#a6c6b3">REAL CITY DRIVE · THREE.JS · OPENSTREETMAP</text>
+</g>
+</svg>
