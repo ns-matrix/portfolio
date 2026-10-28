@@ -224,8 +224,8 @@ const PORTFOLIO_DATA = {
       badge: "Interactive Simulation",
       category: "web-simulation",
       image: "assets/projects/rickshaw-rush.svg",
-      shortDescription: "A browser-based driving simulation set around Mumbai neighbourhoods, with a Three.js auto-rickshaw, MapLibre map controls, OpenStreetMap-based road routing, passenger pickup/drop-off missions, and fare scoring. A separate Python/Ursina prototype is also included.",
-      tags: ["JavaScript", "Three.js", "MapLibre GL JS", "OpenStreetMap", "OSRM", "Python / Ursina"],
+      shortDescription: "A browser-based 3D auto-rickshaw driving simulation for Mumbai neighbourhoods, with Three.js rendering, MapLibre map controls, OpenStreetMap-derived road routing, keyboard/touch driving, passenger missions, and fare scoring. The repository also adds a separate JSON route-waypoint dataset for Powai, Andheri East, and Marine Drive, plus a Python/Ursina prototype.",
+      tags: ["JavaScript", "Three.js", "MapLibre GL JS", "OpenStreetMap", "OSRM", "Mumbai route data", "Python / Ursina"],
       liveUrl: null,
       githubUrl: "https://github.com/ns-matrix/rickshaw-rush",
       stats: [
@@ -236,16 +236,17 @@ const PORTFOLIO_DATA = {
       ],
       caseStudy: {
         problem: "Create a playable auto-rickshaw driving experience grounded in recognizable Mumbai neighbourhoods, while keeping the core browser prototype static and easy to run.",
-        architecture: "The browser version uses MapLibre GL JS for the map, Three.js for a procedural 3D rickshaw, OpenStreetMap-derived road data, and the public OSRM routing service. Keyboard and touch inputs drive the vehicle; mission state tracks passenger pickup, drop-off, and fares. A separate Python/Ursina prototype requests road geometry through Overpass and a driving route through OSRM. The browser version falls back to a local practice route when live routing is unavailable.",
+        architecture: "The browser version uses MapLibre GL JS for the map, Three.js for a procedural 3D rickshaw, OpenStreetMap-derived road data, and the public OSRM routing service. The latest repository update adds data/mumbai-route-areas.json, a separate dataset of waypoint loops and named pickup/drop-off missions for Powai/IIT Bombay/Chandivali, Andheri East/Marol/MIDC, and Marine Drive/Churchgate/Oval Maidan. The current browser HTML still defines its own mission configuration and does not yet load that new JSON file, so it is documented as project data rather than a verified runtime feature. Keyboard and touch inputs drive the vehicle, and the browser build falls back to a local practice route when live routing is unavailable. A separate Python/Ursina prototype requests road geometry through Overpass and a driving route through OSRM.",
         keyFeatures: [
-          "Choose driving areas including Powai, Andheri East, and Marine Drive / South Mumbai.",
-          "Follow road routes when the public OSRM service responds, with a local practice-route fallback.",
+          "Drive in the browser around Mumbai areas including Powai, Andheri East, and Marine Drive / South Mumbai.",
+          "Request road-following routes from the public OSRM service, with a local practice-route fallback when routing is unavailable.",
+          "Review the new data/mumbai-route-areas.json dataset, which defines waypoint loops and named missions across Powai/IIT Bombay/Chandivali, Andheri East/Marol/MIDC, and Marine Drive/Churchgate/Oval Maidan; it is not yet loaded by the browser HTML.",
           "Render a procedural 3D auto-rickshaw with an optional GLB model loader.",
           "Use keyboard or touch controls for steering, acceleration, braking, and map camera controls.",
           "Complete passenger pickup and drop-off missions and earn fare scores.",
           "Explore a separate Python/Ursina 3D prototype that fetches OpenStreetMap road geometry."
         ],
-        results: "The repository contains browser and Python prototypes. Live map tiles and routing depend on public third-party services, so the project is best presented as an interactive simulation prototype rather than a production navigation service."
+        results: "The latest update adds structured route-waypoint data for three Mumbai areas. The browser and Python prototypes still depend on public map/routing services for live geography, so the project is best presented as an interactive simulation prototype rather than a production navigation service."
       }
     }
   ],
