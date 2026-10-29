@@ -224,29 +224,31 @@ const PORTFOLIO_DATA = {
       badge: "Interactive Simulation",
       category: "web-simulation",
       image: "assets/projects/rickshaw-rush.svg",
-      shortDescription: "A browser-based 3D auto-rickshaw driving simulation for Mumbai neighbourhoods, with Three.js rendering, MapLibre map controls, OpenStreetMap-derived road routing, keyboard/touch driving, passenger missions, and fare scoring. The repository also adds a separate JSON route-waypoint dataset for Powai, Andheri East, and Marine Drive, plus a Python/Ursina prototype.",
+      shortDescription: "A playable, map-first 3D auto-rickshaw driving simulation for Mumbai areas. The current browser build combines MapLibre GL JS street maps with a Three.js procedural rickshaw, road-following OSRM routing, area selection, keyboard/touch driving, passenger pickup/drop-off missions, and fare/speed/distance HUD. It includes an offline map tile download/cache flow and a practice-mode fallback; a separate Mumbai waypoint JSON and Python/Ursina prototype are also included.",
       tags: ["JavaScript", "Three.js", "MapLibre GL JS", "OpenStreetMap", "OSRM", "Mumbai route data", "Python / Ursina"],
-      liveUrl: null,
+      liveUrl: "https://rickshaw-rush-tau.vercel.app/real-map-navigation.html",
       githubUrl: "https://github.com/ns-matrix/rickshaw-rush",
       stats: [
         { label: "Browser Renderer", value: "Three.js" },
         { label: "Map UI", value: "MapLibre GL JS" },
         { label: "Road Routing", value: "OSRM" },
-        { label: "Inputs", value: "Keyboard + Touch" }
+        { label: "Inputs", value: "Keyboard + Touch" },
+        { label: "Offline Support", value: "Tile cache + practice fallback" }
       ],
       caseStudy: {
         problem: "Create a playable auto-rickshaw driving experience grounded in recognizable Mumbai neighbourhoods, while keeping the core browser prototype static and easy to run.",
-        architecture: "The browser version uses MapLibre GL JS for the map, Three.js for a procedural 3D rickshaw, OpenStreetMap-derived road data, and the public OSRM routing service. The latest repository update adds data/mumbai-route-areas.json, a separate dataset of waypoint loops and named pickup/drop-off missions for Powai/IIT Bombay/Chandivali, Andheri East/Marol/MIDC, and Marine Drive/Churchgate/Oval Maidan. The current browser HTML still defines its own mission configuration and does not yet load that new JSON file, so it is documented as project data rather than a verified runtime feature. Keyboard and touch inputs drive the vehicle, and the browser build falls back to a local practice route when live routing is unavailable. A separate Python/Ursina prototype requests road geometry through Overpass and a driving route through OSRM.",
+        architecture: "The current playable page is real-map-navigation.html. It renders MapLibre street tiles and overlays a procedural Three.js auto-rickshaw, follows road routes from public OSRM, and lets players choose Powai/IIT Bombay, Andheri East, or Marine Drive/South Mumbai. The HUD tracks speed, distance, fare, and passenger mission; keyboard/touch controls support steering, throttle, braking, camera tilt/follow/zoom, and reset. A service worker can cache/download area map tiles, while local practice mode keeps basic driving available when map/routing services fail. The optional GLB vehicle model can replace the procedural model when the asset exists. The separate data/mumbai-route-areas.json documents named waypoint loops but is not yet consumed by browser mission code. The Python/Ursina prototype separately fetches road geometry via Overpass and routes via OSRM.",
         keyFeatures: [
-          "Drive in the browser around Mumbai areas including Powai, Andheri East, and Marine Drive / South Mumbai.",
-          "Request road-following routes from the public OSRM service, with a local practice-route fallback when routing is unavailable.",
-          "Review the new data/mumbai-route-areas.json dataset, which defines waypoint loops and named missions across Powai/IIT Bombay/Chandivali, Andheri East/Marol/MIDC, and Marine Drive/Churchgate/Oval Maidan; it is not yet loaded by the browser HTML.",
-          "Render a procedural 3D auto-rickshaw with an optional GLB model loader.",
-          "Use keyboard or touch controls for steering, acceleration, braking, and map camera controls.",
-          "Complete passenger pickup and drop-off missions and earn fare scores.",
-          "Explore a separate Python/Ursina 3D prototype that fetches OpenStreetMap road geometry."
+          "Play the hosted browser build and select Powai/IIT Bombay, Andheri East, or Marine Drive / South Mumbai.",
+          "Render a procedural 3D auto-rickshaw with Three.js over a MapLibre street map; an optional GLB model can replace the procedural model when available.",
+          "Follow road-aware routes requested from public OSRM, with a local practice route when live routing is unavailable.",
+          "Use keyboard or touch controls for steering, throttle, braking, zoom, camera tilt/follow, and reset.",
+          "Complete passenger pickup/drop-off missions while tracking speed, distance, and fares.",
+          "Download/cache map tiles for a selected area through a service worker; this improves map reuse but does not guarantee live routing offline.",
+          "Review data/mumbai-route-areas.json for named Mumbai waypoint loops; the current browser mission code does not yet load this separate dataset.",
+          "Explore the separate Python/Ursina prototype, which requests road geometry through Overpass and routes through OSRM."
         ],
-        results: "The latest update adds structured route-waypoint data for three Mumbai areas. The browser and Python prototypes still depend on public map/routing services for live geography, so the project is best presented as an interactive simulation prototype rather than a production navigation service."
+        results: "Commits on 28 October 2026 repaired the blank viewport and restored the playable map-based 3D scene. The hosted browser page returned HTTP 200 on 29 October 2026. This remains a prototype dependent on public map/routing services, not a production navigation service; the separate JSON waypoint dataset is not yet wired into browser missions."
       }
     }
   ],
